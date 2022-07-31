@@ -1,0 +1,28 @@
+<section class="main">
+  <div class="main-content">
+    <div class="main-image">
+      <img src="https://c.pxhere.com/photos/ca/59/photo-1609982.jpg!d" alt="" />
+    </div>
+    <div class="presentation">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora
+      excepturi quibusdam, recusandae voluptatum fuga delectus nisi sed. Saepe
+      voluptatem vel eveniet natus iste! Expedita quia error totam inventore
+      corporis?
+    </div>
+  </div>
+</section>
+<section>
+  <h1>Conheça nosso produtos</h1>
+  <div class="products">
+    <div class="card" *ngFor="let product of products">
+      <div class="cardImage">
+        <img [src]="product.photo" alt="" />
+      </div>
+      <div class="info">
+        <h2>{{ product.name }}</h2>
+        <p>{{ product.description }}</p>
+        <p>{{ product.price | currency: "BRL" }}</p>
+      </div>
+    </div>
+  </div>
+</section>
