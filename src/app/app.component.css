@@ -2,8 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 html {
@@ -12,18 +10,22 @@ html {
   height: 100%;
 }
 
+main {
+  margin-top: 3rem;
+}
+
 .navBar {
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 25vh;
   position: relative;
-  z-index: 1;
 }
 
 .navBar a {
   text-decoration: none;
   color: rgb(133, 143, 131);
+  transition: 0.3s;
 }
 
 .navBar ul {
@@ -36,6 +38,6 @@ html {
   margin: auto;
 }
 
-.navBar ul li a:hover {
+.navBar a:hover {
   color: rgb(174, 213, 167);
 }

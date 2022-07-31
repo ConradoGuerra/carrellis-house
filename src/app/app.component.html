@@ -2,7 +2,9 @@
   <nav class="navBar">
     <a class="home" routerLink="">Login/Home</a>
     <ul>
-      <li><a routerLink="/products">casa</a></li>
+      <li *ngIf="showMenu"><a routerLink="/products">editar produtos</a></li>
+      <li><a routerLink="/contact">contato</a></li>
+      <li><a routerLink="/login">login</a></li>
     </ul>
   </nav>
 </header>
